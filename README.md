@@ -1,5 +1,6 @@
 # vizsga-minta
-Szoftverfejlesztés modulzáró és okj vizsga webfejlesztés vizsga mintamegoldás
+Szoftverfejlesztés modulzáró és okj vizsga mintamegoldás
+webfejlesztés modul
 
 
 1. terminálablak:
@@ -9,10 +10,8 @@ npm run serve
 ```
 
 2. terminálablak:
-
 ```
 npm test
 ```
 
-böngészőben:
-http://localhost:8080
+3. böngészőben:  http://localhost:8080
