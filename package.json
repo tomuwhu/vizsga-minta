@@ -1,0 +1,34 @@
+{
+  "name": "mintavizsga",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "nodemon node express.js"
+  },
+  "dependencies": {
+    "@typopro/web-titillium": "^3.7.5",
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10",
+    "nodemon": "^1.17.5",
+    "vue": "^2.5.16",
+    "vue-axios": "^2.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.0.0-beta.16",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
