@@ -1,5 +1,5 @@
 # vizsga-minta
-Szoftverfejlesztés modulzáró és okj vizsga mintamegoldás
+Szoftverfejlesztés modulzáró és OKJ-vizsga mintamegoldás
 webfejlesztés modul
 
 

@@ -259,9 +259,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Slabo+27px');
 #body {
   margin:20px;
+  font-family: 'Slabo 27px', serif;
 }
 .cim {
   font-family: 'BioRhyme Expanded', serif;
