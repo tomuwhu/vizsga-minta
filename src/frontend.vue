@@ -115,6 +115,8 @@
 </template>
 
 <script>
+var fullpath='http://localhost:3000'  // in development mode
+// var fullpath='' // in production mode
 export default {
   name: 'app',
   data() {
@@ -147,7 +149,7 @@ export default {
     ment() {
       if (this.form._id) {
         this.axios
-            .post('http://localhost:3000/modify',this.form)
+            .post(fullpath+'/modify',this.form)
             .then(resp => {
               if (resp.data.n) {
                 this.view  = 'list'
@@ -162,7 +164,7 @@ export default {
       } else {
         this.keres = this.form.allatnev
         this.axios
-            .post('http://localhost:3000/',this.form)
+            .post(fullpath+'/',this.form)
             .then(resp => {
               if (resp.data._id) {
                 this.form._id = resp.data._id
@@ -208,7 +210,7 @@ export default {
     },
     del(x) {
       this.axios
-          .post('http://localhost:3000/del',{id: x})
+          .post(fullpath+'/del',{id: x})
           .then( resp => {
             if (resp.data.ok) {
               this.tbody_origin =
@@ -250,7 +252,7 @@ export default {
   },
   mounted() {
     this.axios
-        .get('http://localhost:3000/alldata')
+        .get(fullpath+'/alldata')
         .then( resp => this.tbody_origin = resp.data.sort(
           (a, b) => a.tulajnev.localeCompare(b.tulajnev)
         ) )
