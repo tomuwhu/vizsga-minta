@@ -85,7 +85,7 @@ app.post(
 )
 
 app.get(
-  '/',
+  '/alldata',
   (req, res) => {
       if (db)
       db.collection('pets')

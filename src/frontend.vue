@@ -250,7 +250,7 @@ export default {
   },
   mounted() {
     this.axios
-        .get('http://localhost:3000/')
+        .get('http://localhost:3000/alldata')
         .then( resp => this.tbody_origin = resp.data.sort(
           (a, b) => a.tulajnev.localeCompare(b.tulajnev)
         ) )
