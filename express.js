@@ -53,16 +53,15 @@ app.post(
         .updateOne(
           { _id : mdb.ObjectId(req.body._id) },
           { $set: {
-            "allatnev"   : req.body.allatnev,
-            "tulajnev": req.body.tulajnev,
-            "tultel"  : req.body.tultel,
-            "fajta"   : req.body.fajta,
-            "szule"   : req.body.szule,
+            "allatnev" : req.body.allatnev,
+            "tulajnev" : req.body.tulajnev,
+            "tultel"   : req.body.tultel,
+            "fajta"    : req.body.fajta,
+            "szule"    : req.body.szule,
             "veszolip" : req.body.veszolip,
           } }
         )
         .then( (resp) => {
-            console.log(resp.result)
             res.send(resp.result)
         } )
     }

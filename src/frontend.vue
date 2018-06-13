@@ -124,12 +124,12 @@ export default {
       view  : 'list',
       thead : [
         { key: 'tulajnev', label: 'Tulajdonos neve', sortable: true},
-        { key: 'tultel', label: 'Tulajdonos telefonszáma'},
+        { key: 'tultel',   label: 'Tulajdonos telefonszáma'},
         { key: 'allatnev', label: 'Állat neve', sortable: true},
-        { key: 'fajta', label: 'Fajtája'},
-        { key: 'szule', label: 'Születési éve'},
-        { key: 'veszolip', label: 'Utolsó oltás', sortable: true},
-        { key: '_id', label: 'Szerk. / Törl.'},
+        { key: 'fajta',    label: 'Fajtája'},
+        { key: 'szule',    label: 'Születési éve', 'class': 'text-center' },
+        { key: 'veszolip', label: 'Utolsó oltás', sortable: true, 'class': 'text-center'},
+        { key: '_id',      label: 'Szerk. / Törl.', 'class': 'text-right'},
       ],
       tbody_origin: [],
       form: {}
